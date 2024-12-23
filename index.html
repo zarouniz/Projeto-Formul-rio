@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div id="app">
     <main>
@@ -20,6 +22,47 @@
         </div>
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input id="fullname " name="fullname" type="text" placeholder="Qual o nome da criança?">
+
+            </div>
+            <div class="input-wrapper">
+              <label for="Birth">Data de nascimento</label>
+              <input id="Birth" type="date" name="Birth" lang="pt-br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="nonbinare">Não-binári</option>
+              </select>
+            </div>
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" 
+              cols="30" row="10" 
+              placeholder="A criança possui alguma condição méidca que a escola deve estar ciente? (Caso sim, especificar)"
+              ></textarea>
+            </div>
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Clique aqui para <br>
+                selecionar os arquivos
+              </p>
+            </div>
+
+      
+          </fieldset>
+        </form>
       </div>
     </main>
     <aside>
@@ -34,4 +77,5 @@
     </aside>
   </div>
 </body>
+
 </html>
