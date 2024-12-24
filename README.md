@@ -18,7 +18,7 @@ Projeto de estudo sobre Forms.
 <br>
 
 <p align="center">
-  <img alt="projeto formulário de matrícula" src="capa-projeto-formulario.png" width="100%">
+  <img alt="projeto formulário de matrícula" src=".github/Cover.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
