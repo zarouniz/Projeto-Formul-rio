@@ -42,8 +42,8 @@ img {
   display: flex;
 }
 .flex-1 {
-  flex: 1
+  flex: 1;
 }
-.flex {
-  flex: 2
+.flex-2 {
+  flex: 2;
 }
